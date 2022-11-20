@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body onload="slider()">
+    <div class="main">
+        <div class="slider">
+            <img src="zoom2.jpg" id="slideimg">
+        </div>
+        <div class="overlay">
+            <div class="text">
+                <h1>Your seeing the Best Carousel </h1>
+                <h3 class="text-h3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti harum quia
+                    repudiandae ipsum libero!</h3>
+
+                <div>
+                    <button>Suscribe Now</button>
+                    <button class="btn-1">Watch Now</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        var slideimg = document.getElementById("slideimg");
+
+        var images = new Array(
+            "zoom2.jpg",
+            "zoom3.jpg",
+            "zoom1.jpg"
+        )
+
+        var len = images.length;
+        var i = 0;
+
+        function slider() {
+            if (i > len - 1) {
+                i = 0;
+            }
+            slideimg.src = images[i];
+            i++;
+            setTimeout('slider()', 3000);
+        }
+
+
+    </script>
+</body>
+
+</html>

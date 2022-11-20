@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.slider{
+    height: 100vh;
+    width: 100%;
+
+}
+
+.slider img{
+    position: absolute;
+    height:100vh;
+    width: 100%;
+}
+#slideimg{
+   
+    width: 100%;
+    height: 100vh;
+    animation: zoom 3s linear infinite;
+
+}
+
+/*[[[[[[[[[[[[[[[[[[[[[[[[********** if we remove animation it will become normal carousel******************]]]]]]]]]] */
+
+@keyframes zoom {
+    0%{
+        transform: scale(1.2);
+    }
+    15%{
+        transform: scale(1);
+    }
+    85%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+.overlay{
+    height:100vh;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  background: linear-gradient( rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+  
+}
+
+.text{
+    text-align: center;
+    width: 60%;
+    margin: 30vh auto;
+    color: white;
+    font-size: 32px;
+}
+
+.text-h3{
+    font-weight: bold;
+    font-size: 22px;
+    margin: 30px;
+}
+button{
+   width: 200px;
+    margin: 0px 10px;
+    padding: 12px 0px;
+   font-size: 18px;
+   color: white;
+    border: 2px solid rgb(245, 112, 64);
+    border-radius: 15px;
+    background-color: rgb(245, 112, 64);
+    transition: 0.5s;
+}
+
+button:hover{
+    background: transparent;
+    color: white;
+    border-color: white;
+}
+
+.btn-1{
+    background: transparent; color: white;
+border: 2px solid white;
+}
+
+.btn-1:hover{
+    background-color: rgb(245, 112, 64);
+}
